@@ -136,10 +136,10 @@ int main(void) {
   printf("\x1b[2J\x1b[;H");
 
   printf("****************** "
-         "HAL: Hello RT-Labs ! Example "
+         "HAL: Hello World ! Example "
          "****************** \r\n\n");
 
-  printf("Hello World!!!\r\n\n");
+  printf("Hello RT-Labs!!!\r\n\n");
   printf("For more projects, "
          "visit our code examples repositories:\r\n\n");
 
