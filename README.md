@@ -1,5 +1,7 @@
 # HAL: Hello world
 
+RT-Labs demo application
+
 This code example demonstrates a simple UART communication by printing the "Hello world" message on a terminal and blinking an LED using a timer resource. The code example is based on HAL(Hardware Abstraction Layer) libraries.
 
 
@@ -111,12 +113,12 @@ The following example clones the "[Hello world](https://github.com/Infineon/mtb-
 
 The 'project-creator-cli' tool has the following arguments:
 
-Argument | Description | Required/optional
----------|-------------|-----------
-`--board-id` | Defined in the <id> field of the [BSP](https://github.com/Infineon?q=bsp-manifest&type=&language=&sort=) manifest | Required
-`--app-id`   | Defined in the <id> field of the [CE](https://github.com/Infineon?q=ce-manifest&type=&language=&sort=) manifest | Required
-`--target-dir`| Specify the directory in which the application is to be created if you prefer not to use the default current working directory | Optional
-`--user-app-name`| Specify the name of the application if you prefer to have a name other than the example's default name | Optional
+| Argument          | Description                                                                                                                    | Required/optional |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------ | ----------------- |
+| `--board-id`      | Defined in the <id> field of the [BSP](https://github.com/Infineon?q=bsp-manifest&type=&language=&sort=) manifest              | Required          |
+| `--app-id`        | Defined in the <id> field of the [CE](https://github.com/Infineon?q=ce-manifest&type=&language=&sort=) manifest                | Required          |
+| `--target-dir`    | Specify the directory in which the application is to be created if you prefer not to use the default current working directory | Optional          |
+| `--user-app-name` | Specify the name of the application if you prefer to have a name other than the example's default name                         | Optional          |
 
 > **Note:** The project-creator-cli tool uses the `git clone` and `make getlibs` commands to fetch the repository and import the required libraries. For details, see the "Project creator tools" section of the [ModusToolbox&trade; tools package user guide](https://www.infineon.com/ModusToolboxUserGuide) (locally available at {ModusToolbox&trade; install directory}/docs_{version}/mtb_user_guide.pdf).
 
@@ -246,24 +248,24 @@ Follow the instructions in your preferred IDE.
 
 **Table 1. Application resources**
 
- Resource  |  Alias/object     |    Purpose
- :-------- | :-------------    | :------------
- UART (HAL)|cy_retarget_io_uart_obj| UART HAL object used by Retarget-IO for the Debug UART port
- GPIO (HAL)    | CYBSP_USER_LED     | User LED
+ | Resource   | Alias/object            | Purpose                                                     |
+ | :--------- | :---------------------- | :---------------------------------------------------------- |
+ | UART (HAL) | cy_retarget_io_uart_obj | UART HAL object used by Retarget-IO for the Debug UART port |
+ | GPIO (HAL) | CYBSP_USER_LED          | User LED                                                    |
 
 <br>
 
 ## Related resources
 
-Resources  | Links
------------|----------------------------------
-Application notes  | [AN228571](https://www.infineon.com/AN228571) – Getting started with PSoC&trade; 6 MCU on ModusToolbox&trade; software <br>  [AN215656](https://www.infineon.com/AN215656) – PSoC&trade; 6 MCU: Dual-CPU system design <br> [AN234334](https://www.infineon.com/dgdl/Infineon-AN234334_Getting_started_with_XMC7000_MCU_on_ModusToolbox_software-ApplicationNotes-v01_00-EN.pdf?fileId=8ac78c8c8412f8d301842d32c5765bfd) – Getting started with XMC7000 MCU on ModusToolbox&trade; 
-Code examples  | [Using ModusToolbox&trade;](https://github.com/Infineon/Code-Examples-for-ModusToolbox-Software) on GitHub <br> [Using PSoC&trade; Creator](https://www.infineon.com/cms/en/design-support/tools/sdk/psoc-software/psoc-creator/)
-Device documentation | [PSoC&trade; 6 MCU datasheets](https://www.infineon.com/cms/en/search.html#!view=downloads&term=psoc6&doc_group=Data%20Sheet) <br> [PSoC&trade; 6 technical reference manuals](https://www.infineon.com/cms/en/search.html#!view=downloads&term=psoc6&doc_group=Additional%20Technical%20Information) <br> [XMC7000 MCU datasheets](https://www.infineon.com/cms/en/search.html#!view=downloads&term=xmc7000&doc_group=Data%20Sheet) <br> [XMC7000 technical reference manuals](https://www.infineon.com/cms/en/search.html#!view=downloads&term=xmc7000&doc_group=User%20Manual)
-Development kits | Select your kits from the [Evaluation board finder](https://www.infineon.com/cms/en/design-support/finder-selection-tools/product-finder/evaluation-board) page 
-Libraries on GitHub  | [mtb-pdl-cat1](https://github.com/Infineon/mtb-pdl-cat1) – Peripheral Driver Library (PDL)  <br> [mtb-hal-cat1](https://github.com/Infineon/mtb-hal-cat1) – Hardware Abstraction Layer (HAL) library <br> [retarget-io](https://github.com/Infineon/retarget-io) – Utility library to retarget STDIO messages to a UART port
-Middleware on GitHub  | [capsense](https://github.com/Infineon/capsense) – CAPSENSE&trade; library and documents <br> [psoc6-middleware](https://github.com/Infineon/modustoolbox-software#psoc-6-middleware-libraries) – Links to all PSoC&trade; 6 MCU middleware
-Tools  | [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) – ModusToolbox&trade; software is a collection of easy-to-use libraries and tools enabling rapid development with Infineon MCUs for applications ranging from wireless and cloud-connected systems, edge AI/ML, embedded sense and control, to wired USB connectivity using PSoC&trade; Industrial/IoT MCUs, AIROC&trade; Wi-Fi and Bluetooth&reg; connectivity devices, XMC&trade; Industrial MCUs, and EZ-USB&trade;/EZ-PD&trade; wired connectivity controllers. ModusToolbox&trade; incorporates a comprehensive set of BSPs, HAL, libraries, configuration tools, and provides support for industry-standard IDEs to fast-track your embedded application development.
+| Resources            | Links                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Application notes    | [AN228571](https://www.infineon.com/AN228571) – Getting started with PSoC&trade; 6 MCU on ModusToolbox&trade; software <br>  [AN215656](https://www.infineon.com/AN215656) – PSoC&trade; 6 MCU: Dual-CPU system design <br> [AN234334](https://www.infineon.com/dgdl/Infineon-AN234334_Getting_started_with_XMC7000_MCU_on_ModusToolbox_software-ApplicationNotes-v01_00-EN.pdf?fileId=8ac78c8c8412f8d301842d32c5765bfd) – Getting started with XMC7000 MCU on ModusToolbox&trade;                                                                                                                                                                                                                                                       |
+| Code examples        | [Using ModusToolbox&trade;](https://github.com/Infineon/Code-Examples-for-ModusToolbox-Software) on GitHub <br> [Using PSoC&trade; Creator](https://www.infineon.com/cms/en/design-support/tools/sdk/psoc-software/psoc-creator/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Device documentation | [PSoC&trade; 6 MCU datasheets](https://www.infineon.com/cms/en/search.html#!view=downloads&term=psoc6&doc_group=Data%20Sheet) <br> [PSoC&trade; 6 technical reference manuals](https://www.infineon.com/cms/en/search.html#!view=downloads&term=psoc6&doc_group=Additional%20Technical%20Information) <br> [XMC7000 MCU datasheets](https://www.infineon.com/cms/en/search.html#!view=downloads&term=xmc7000&doc_group=Data%20Sheet) <br> [XMC7000 technical reference manuals](https://www.infineon.com/cms/en/search.html#!view=downloads&term=xmc7000&doc_group=User%20Manual)                                                                                                                                                        |
+| Development kits     | Select your kits from the [Evaluation board finder](https://www.infineon.com/cms/en/design-support/finder-selection-tools/product-finder/evaluation-board) page                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Libraries on GitHub  | [mtb-pdl-cat1](https://github.com/Infineon/mtb-pdl-cat1) – Peripheral Driver Library (PDL)  <br> [mtb-hal-cat1](https://github.com/Infineon/mtb-hal-cat1) – Hardware Abstraction Layer (HAL) library <br> [retarget-io](https://github.com/Infineon/retarget-io) – Utility library to retarget STDIO messages to a UART port                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Middleware on GitHub | [capsense](https://github.com/Infineon/capsense) – CAPSENSE&trade; library and documents <br> [psoc6-middleware](https://github.com/Infineon/modustoolbox-software#psoc-6-middleware-libraries) – Links to all PSoC&trade; 6 MCU middleware                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Tools                | [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) – ModusToolbox&trade; software is a collection of easy-to-use libraries and tools enabling rapid development with Infineon MCUs for applications ranging from wireless and cloud-connected systems, edge AI/ML, embedded sense and control, to wired USB connectivity using PSoC&trade; Industrial/IoT MCUs, AIROC&trade; Wi-Fi and Bluetooth&reg; connectivity devices, XMC&trade; Industrial MCUs, and EZ-USB&trade;/EZ-PD&trade; wired connectivity controllers. ModusToolbox&trade; incorporates a comprehensive set of BSPs, HAL, libraries, configuration tools, and provides support for industry-standard IDEs to fast-track your embedded application development. |
 
 <br>
 
@@ -279,25 +281,25 @@ Infineon provides a wealth of data at [www.infineon.com](https://www.infineon.co
 
 Document title: *CE223541* - *HAL: Hello world*
 
- Version | Description of change
- ------- | ---------------------
- 1.0.0   | New code example
- 1.1.0   | Updated to support ModusToolbox&trade; v2.1, add new kits<br> Cosmetic changes to code
- 1.1.1   | Minor documentation updates
- 2.0.0   | Major update to support ModusToolbox&trade; v2.2, added support for new kits<br> This version is not backward compatible with ModusToolbox&trade; software v2.1
- 2.0.1   | Minor documentation updates, added feedback link
- 2.1.0   | Added support for new kits
- 2.2.0   | Added support for new kits
- 3.0.0   | Updated to BSP v3.X and added support for new kit
- 4.0.0   | Major update to support ModusToolbox&trade; v3.0. This version is not backward compatible with previous versions of ModusToolbox&trade;. <br> Added support for KIT_XMC72_EVK & PSoC&trade; 64 Standard Secure Kit
- 4.1.0   | Added support for CY8CPROTO-064B0S3 and CY8CPROTO-064S1-SB
- 4.2.0   | Added support for CY8CEVAL-062S2-LAI-43439M2
- 4.3.0   | Added support for CY8CPROTO-062S2-43439
- 4.4.0   | Added support for CY8CEVAL-062S2-MUR-4373EM2, CY8CEVAL-062S2-MUR-4373M2 
- 4.5.0   | Added support for CYW920829M2EVK-02 and replace retarget_io_init() to retarget_io_init_fc()
- 4.6.0   | Added support for KIT_XMC72_EVK_MUR_43439M2 and updated to support ModusToolbox&trade; v3.1.
- 4.7.0   | Added support for KIT_XMC71_EVK_LITE_V1
- 4.8.0   | Added support for CY8CEVAL-062S2-CYW43022CUB 
+ | Version | Description of change                                                                                                                                                                                              |
+ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+ | 1.0.0   | New code example                                                                                                                                                                                                   |
+ | 1.1.0   | Updated to support ModusToolbox&trade; v2.1, add new kits<br> Cosmetic changes to code                                                                                                                             |
+ | 1.1.1   | Minor documentation updates                                                                                                                                                                                        |
+ | 2.0.0   | Major update to support ModusToolbox&trade; v2.2, added support for new kits<br> This version is not backward compatible with ModusToolbox&trade; software v2.1                                                    |
+ | 2.0.1   | Minor documentation updates, added feedback link                                                                                                                                                                   |
+ | 2.1.0   | Added support for new kits                                                                                                                                                                                         |
+ | 2.2.0   | Added support for new kits                                                                                                                                                                                         |
+ | 3.0.0   | Updated to BSP v3.X and added support for new kit                                                                                                                                                                  |
+ | 4.0.0   | Major update to support ModusToolbox&trade; v3.0. This version is not backward compatible with previous versions of ModusToolbox&trade;. <br> Added support for KIT_XMC72_EVK & PSoC&trade; 64 Standard Secure Kit |
+ | 4.1.0   | Added support for CY8CPROTO-064B0S3 and CY8CPROTO-064S1-SB                                                                                                                                                         |
+ | 4.2.0   | Added support for CY8CEVAL-062S2-LAI-43439M2                                                                                                                                                                       |
+ | 4.3.0   | Added support for CY8CPROTO-062S2-43439                                                                                                                                                                            |
+ | 4.4.0   | Added support for CY8CEVAL-062S2-MUR-4373EM2, CY8CEVAL-062S2-MUR-4373M2                                                                                                                                            |
+ | 4.5.0   | Added support for CYW920829M2EVK-02 and replace retarget_io_init() to retarget_io_init_fc()                                                                                                                        |
+ | 4.6.0   | Added support for KIT_XMC72_EVK_MUR_43439M2 and updated to support ModusToolbox&trade; v3.1.                                                                                                                       |
+ | 4.7.0   | Added support for KIT_XMC71_EVK_LITE_V1                                                                                                                                                                            |
+ | 4.8.0   | Added support for CY8CEVAL-062S2-CYW43022CUB                                                                                                                                                                       |
 <br>
 
 

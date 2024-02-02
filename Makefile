@@ -46,7 +46,7 @@ TARGET=CY8CPROTO-062S2-43439
 #
 # If APPNAME is edited, ensure to update or regenerate launch
 # configurations for your IDE.
-APPNAME=mtb-example-hal-hello-world
+APPNAME=mtb-example-hal-rtlabs_demo
 
 # Name of toolchain to use. Options include:
 #
