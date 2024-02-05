@@ -58,7 +58,6 @@
 bool timer_interrupt_flag = false;
 bool led_blink_active_flag = true;
 
-
 /* Variable for storing character read from terminal */
 uint8_t uart_read_value;
 
